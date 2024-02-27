@@ -1,0 +1,26 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Views/Shared/_MongoLayout.cshtml";
+}
+
+<h1>UpdateProduct</h1>
+
+<form method="post">
+    <label>Ürün ID</label>
+    <input type="text" asp-for="ProductID" class="form-control" readonly style="border:1px solid #000" />
+    <br />
+    <label>Ürün Adı</label>
+    <input type="text" asp-for="ProductName" class="form-control" style="border:1px solid #000" />
+    <br />
+    <label>Ürün Fiyatı</label>
+    <input type="text" asp-for="ProducPrice" class="form-control" style="border:1px solid #000" />
+    <br />
+    <label>Ürün Stok</label>
+    <input type="text" asp-for="ProducStock" class="form-control" style="border:1px solid #000" />
+    <br />
+    <label>Kategori ID</label>
+    <input type="text" asp-for="CategoryID" class="form-control" style="border:1px solid #000" />
+    <br />
+    <button class="btn btn-outline-primary">Ürün Güncelle</button>
+</form>
